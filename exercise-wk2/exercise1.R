@@ -9,7 +9,7 @@ my.vector <- c(my.num, initials)
 vector.sum <- sum(my.vector)
 
 # Describe why this doesn't work: 
-# 
+# Sum command doesn't work for those two different character types
 
 install.packages("stringr")
 
@@ -18,20 +18,25 @@ my.line <- "Hey, hey, this is the library"
 print(str_length(my.line))
 
 # Describe why this doesn't work: 
-# 
+#Answer: Didn't have the "my.library" line to load the function from the hard drive.
 
 said.the.famous <- paste(my.line, " - ", initial)
 
 # Describe why this doesn't work: 
-# 
+# Answer: initial is not defined.
 
 
 ## Part 2 - Vector and function practice
 
 # Make a vector and use typeof to check what type R considers it to be
+dogs <- c("Hachiko")
+typeof(dogs)
 
 # Write a function `CompareLength` that takes in 2 vectors, and returns the sentence:
 # "The difference in lengths is N"
+CompareLength <-function(length.1,length.2) {
+  length.1 <- print "The difference in 
+}
 
 
 # Pass two vectors of different length to your `CompareLength` function
